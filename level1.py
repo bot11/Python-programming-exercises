@@ -64,7 +64,26 @@ def ex4():
     print raw_input().split(',')
     print tuple(raw_input().split(','))
   
+class Ex5:
+    """Define a class which has at least two methods:
+    getString: to get a string from console input
+    printString: to print the string in upper case.
+    Also please include simple test function to test the class methods.
+
+    Hints:Use __init__ method to construct some parameters"""
+    def __init__(self, string):
+        self.string = string
+        
+    def getString(self):
+        return self.string
+        
+    def printString(self):
+        print ">%s" % self.string
+
 if __name__ == '__main__':
     #print ex2([1, 2, 3])
     #print ex3(8)
-    ex4()
+    #ex4()
+    ex5 = Ex5('Hello')
+    ex5.printString()
+    
